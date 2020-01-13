@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1030032922326",
+    "firebase_url": "https://music-on-the-way.firebaseio.com",
+    "project_id": "music-on-the-way",
+    "storage_bucket": "music-on-the-way.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030032922326:android:b42e5876001701bb185b77",
+        "android_client_info": {
+          "package_name": "com.hetic.musicontheway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030032922326-l220oq04aoho35pj8pbtn98nr0blpo7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hetic.musicontheway",
+            "certificate_hash": "1dae5ddc58556f99c42a1748d40a0786f5247198"
+          }
+        },
+        {
+          "client_id": "1030032922326-eraf0vslh84tcidj3uqhsqgcdiuk19gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNs_hBOgsfa6F9hr4dLYbW9TlAF0v34b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030032922326-eraf0vslh84tcidj3uqhsqgcdiuk19gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
