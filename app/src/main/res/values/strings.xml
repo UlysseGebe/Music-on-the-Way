@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Music on the Way</string>
+    <string name="Visitor">Visitor</string>
+    <string name="Push">NewEvent</string>
+    <string name="Name">Event Name</string>
+    <string name="Info">Somes Informations</string>
+    <string name="Submit">Valider</string>
 </resources>
