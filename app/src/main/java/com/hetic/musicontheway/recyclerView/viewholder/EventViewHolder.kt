@@ -1,17 +1,20 @@
-package com.hetic.musicontheway.RecyclerView
+package com.hetic.musicontheway.recyclerView.viewholder
 
-class EventViewHolder {
-    (itemView: View) : FastAdapter.ViewHolder<MovieItem>(itemView) {
-        override fun bindView(item: MovieItem, payloads: MutableList<Any>) {
-            val movie = item.movie
+import android.view.View
+import com.hetic.musicontheway.recyclerView.item.EventItem
+import com.mikepenz.fastadapter.FastAdapter
+import kotlinx.android.synthetic.main.row_event.view.*
 
-            itemView.movieRowTitleTextView.text = movie.title
-            itemView.movieRowNumberTextView.text = movie.number.toString()
-        }
+class EventViewHolder(itemView: View) : FastAdapter.ViewHolder<EventItem>(itemView) {
+    override fun bindView(item: EventItem, payloads: MutableList<Any>) {
+        val event = item.event
 
-        override fun unbindView(item: MovieItem) {
-            itemView.movieRowTitleTextView.text = null
-            itemView.movieRowNumberTextView.text = null
-        }
+        itemView.eventRowTitleTextView.text = event.name.toString()
+        itemView.eventRowNumberTextView.text = event.text.toString()
+    }
+
+    override fun unbindView(item: EventItem) {
+        itemView.eventRowTitleTextView.text = null
+        itemView.eventRowNumberTextView.text = null
     }
 }

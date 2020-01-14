@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewEvent"></activity>
+        <activity android:name=".FireBase.Add.NewEvent"></activity>
+        <activity android:name=".recyclerView.EventActivity"></activity>
+        <activity android:name=".recyclerView.EventDetailActivity"></activity>
     </application>
 
 </manifest>
