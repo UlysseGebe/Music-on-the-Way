@@ -1,10 +1,13 @@
-package com.hetic.musicontheway
+package com.hetic.musicontheway.FireBase.Add
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
+import com.hetic.musicontheway.FireBase.Event
+import com.hetic.musicontheway.MainActivity
+import com.hetic.musicontheway.R
 import kotlinx.android.synthetic.main.activity_newevent.*
 
 class NewEvent : AppCompatActivity() {
