@@ -21,7 +21,7 @@
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginLeftAcc"
+        android:layout_marginStart="24dp"
         android:orientation="vertical">
 
         <TextView
@@ -48,13 +48,20 @@
         android:layout_marginTop="25dp"
         android:orientation="horizontal">
 
+
         <Button
+            android:id="@+id/landToArtiste"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/artiste" />
+            android:background="@drawable/artiste"
+            android:fontFamily="@font/aller_bd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <Button
+            android:id="@+id/landToVoyageur"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

@@ -5,4 +5,13 @@
     <string name="Name">Event Name</string>
     <string name="Info">Somes Informations</string>
     <string name="Submit">Valider</string>
+    <string name="MusicOnTheWay">Music on the Way</string>
+    <string name="ArtisteouVoyageur">Artiste ou Voyageur ?</string>
+    <string name="soustitre">Indique nous l’usage que tu veux faire de Music on the way</string>
+    <string name="IAM">Je suis un </string>
+    <string name="artiste">Artiste</string>
+    <string name="voyageur">Voyageur</string>
+
+
+
 </resources>

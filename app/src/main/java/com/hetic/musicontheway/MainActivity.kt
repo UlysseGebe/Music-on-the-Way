@@ -14,12 +14,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Push.setOnClickListener {
+        landToArtiste.setText(getString(R.string.IAM))
+
+        landToArtiste.setOnClickListener {
             val intent = Intent(this, NewEvent::class.java)
             startActivity(intent)
         }
 
-        Visitor.setOnClickListener {
+        landToVoyageur.setOnClickListener {
             /*val intent = Intent(this, EventActivity::class.java)
             startActivity(intent)*/
             val intent = Intent(this, MapsActivity::class.java)
