@@ -3,6 +3,7 @@ package com.hetic.musicontheway
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import com.hetic.musicontheway.FireBase.Add.NewEvent
 import com.hetic.musicontheway.Maps.MapsActivity
 import com.hetic.musicontheway.recyclerView.EventActivity
@@ -14,9 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        landToArtiste.setText(getString(R.string.IAM)+"<b>"+getString(R.string.artiste)+"</b>")
-        landToVoyageur.setText(getString(R.string.IAM)+"<b>"+getString(R.string.voyageur)+"</b>")
+        val artist = getString(R.string.IAM) +"<br>"+ "<b>" + getString(R.string.artiste) + "</b>"
+        val voyage = getString(R.string.IAM) +"<br>"+ "<b>" + getString(R.string.voyageur) + "</b>"
+        landToArtiste.setText(Html.fromHtml(artist))
+        landToVoyageur.setText(Html.fromHtml(voyage))
 
 
         landToArtiste.setOnClickListener {
