@@ -14,8 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         landToArtiste.setText(getString(R.string.IAM)+getString(R.string.artiste))
         landToVoyageur.setText(getString(R.string.IAM))
+
 
         landToArtiste.setOnClickListener {
             val intent = Intent(this, NewEvent::class.java)
