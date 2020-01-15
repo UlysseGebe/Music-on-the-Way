@@ -2,11 +2,11 @@
 Application Android faite avec Kotlin
 
 ## Liste des features
-* Map Google API (### Map Google API)
-* Firebase - Lecture (### Firebase - Lecture)
-* Firebase - Ecriture (### Firebase - Ecriture)
-* Player musique (### Player musique)
-* Call API Navitia (### Call API Navitia)
+* [Map Google API] (### Map Google API)
+* [Firebase - Lecture] (### Firebase - Lecture)
+* [Firebase - Ecriture] (### Firebase - Ecriture)
+* [Player musique] (### Player musique)
+* [Call API Navitia] (### Call API Navitia)
 
 ## Expication du fonctionnement
 ### Map Google API
