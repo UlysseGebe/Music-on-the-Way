@@ -8,8 +8,11 @@ import com.hetic.musicontheway.FireBase.Add.NewEvent
 import com.hetic.musicontheway.Maps.MapsActivity
 import com.hetic.musicontheway.recyclerView.EventActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.properties.Delegates
 
 class MainActivity : AppCompatActivity() {
+
+    private var status : Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,18 +23,29 @@ class MainActivity : AppCompatActivity() {
         landToArtiste.setText(Html.fromHtml(artist))
         landToVoyageur.setText(Html.fromHtml(voyage))
 
-
         landToArtiste.setOnClickListener {
-            val intent = Intent(this, NewEvent::class.java)
-            startActivity(intent)
+            landToArtiste.setBackgroundResource(R.drawable.artiste_dark)
+            landToVoyageur.setBackgroundResource(R.drawable.voyageur)
+            status = 1
         }
 
         landToVoyageur.setOnClickListener {
-            /*val intent = Intent(this, EventActivity::class.java)
-            startActivity(intent)*/
-            val intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
+            landToVoyageur.setBackgroundResource(R.drawable.voyageur_dark)
+            landToArtiste.setBackgroundResource(R.drawable.artiste)
+            status = 2
         }
 
+        choseButton.setOnClickListener {
+            if (status == 1) {
+                val intent = Intent(this, NewEvent::class.java)
+                startActivity(intent)
+
+            } else if (status == 2) {
+                /*val intent = Intent(this, EventActivity::class.java)
+                startActivity(intent)*/
+                val intent = Intent(this, MapsActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }
