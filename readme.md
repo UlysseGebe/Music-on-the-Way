@@ -2,7 +2,7 @@
 Application Android faite avec Kotlin
 
 ## Liste des features
-* [Map Google API] (### Map Google API)
+[* Map Google API](### Map Google API)
 * [Firebase - Lecture] (### Firebase - Lecture)
 * [Firebase - Ecriture] (### Firebase - Ecriture)
 * [Player musique] (### Player musique)
