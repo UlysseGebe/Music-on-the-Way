@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        landToArtiste.setText(getString(R.string.IAM)+getString(R.string.artiste))
-        landToVoyageur.setText(getString(R.string.IAM)+getString(R.string.voyageur))
+        landToArtiste.setText(getString(R.string.IAM)+"<b>"+getString(R.string.artiste)+"</b>")
+        landToVoyageur.setText(getString(R.string.IAM)+"<b>"+getString(R.string.voyageur)+"</b>")
 
 
         landToArtiste.setOnClickListener {
