@@ -2,11 +2,11 @@
 Application Android faite avec Kotlin
 
 ## Liste des features
-[* Map Google API](### Map Google API)
-* [Firebase - Lecture] (### Firebase - Lecture)
-* [Firebase - Ecriture] (### Firebase - Ecriture)
-* [Player musique] (### Player musique)
-* [Call API Navitia] (### Call API Navitia)
+* Map Google API
+* Firebase - Lecture
+* Firebase - Ecriture
+* Player musique
+* Call API Navitia
 
 ## Expication du fonctionnement
 ### Map Google API
@@ -15,7 +15,7 @@ Il y a 3 fichiers importants.
 Ce fichier contient le fragment pour la map
 
 * google_maps_api.xml (values)
-Ce fichier contient la clé API et il est appelé par le fichier AndroidManifest.xml avec le code:
+Ce fichier contient la clé API et il est appelé par le fichier [AndroidManifest.xml](app/src/main/AndroidManifest.xml) avec le code:
 ```xml
 <meta-data
     android:name="com.google.android.geo.API_KEY"
