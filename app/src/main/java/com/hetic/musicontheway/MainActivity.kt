@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
 
         landToArtiste.setText(getString(R.string.IAM)+getString(R.string.artiste))
-        landToVoyageur.setText(getString(R.string.IAM))
+        landToVoyageur.setText(getString(R.string.IAM)+getString(R.string.voyageur))
 
 
         landToArtiste.setOnClickListener {
