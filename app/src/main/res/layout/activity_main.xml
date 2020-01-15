@@ -21,15 +21,16 @@
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginStart="24dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:layout_marginTop="56dp"
             android:fontFamily="@font/bwmodelicass01_bold"
-            android:text="@string/ArtisteouVoyageur" />
+            android:text="@string/ArtisteouVoyageur"
+            />
 
         <TextView
             android:id="@+id/soustitre"
@@ -38,41 +39,57 @@
             android:layout_marginTop="18dp"
             android:fontFamily="@font/aller_rg"
             android:text="@string/soustitre"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:layout_marginStart="24dp"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/choice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:orientation="horizontal">
 
-
-        <Button
-            android:id="@+id/landToArtiste"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/artiste"
-            android:fontFamily="@font/aller_lt"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/landToArtiste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/artiste"
+                android:fontFamily="@font/aller_lt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/landToVoyageur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/voyageur"
+                android:fontFamily="@font/aller_lt"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/landToVoyageur"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/voyageur"
-            android:fontFamily="@font/aller_lt"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/white"
-            android:textSize="18sp"/>
+            android:id="@+id/choseButton"
+            style="@style/MusicStationMetroButton"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/Suivant" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>
