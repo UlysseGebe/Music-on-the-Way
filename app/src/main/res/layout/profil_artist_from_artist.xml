@@ -204,7 +204,7 @@
                 android:layout_marginBottom="24dp">
 
                 <Button
-                    android:id="@+id/playBtn"
+                    android:id="@+id/test12"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:background="@drawable/play"
@@ -243,6 +243,45 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addArtistEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/add_artiste"
+            android:padding="8dp"
+            android:alpha="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addmusic"
+                android:fontFamily="@font/bwmodelicass01_bold"
+                android:textColor="@color/backgroundColorTop2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/backgroundColorTop2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/bwmodelicass01_bold"
+                android:text="@string/addevent"
+                android:textColor="@color/backgroundColorTop2" />
 
         </LinearLayout>
 
@@ -265,11 +304,12 @@
                     android:text="@string/eventFr" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/add"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/bell" />
+                    app:srcCompat="@drawable/add"
+                    android:onClick="addAppears" />
 
                 <Button
                     android:id="@+id/buttonMusic"
@@ -281,13 +321,6 @@
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <Button
-            android:id="@+id/test"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="24dp"
-            android:background="@drawable/play"
-            android:onClick="playBtnClick" />
 
 
     </LinearLayout>

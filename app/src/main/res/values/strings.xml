@@ -30,6 +30,9 @@
     <string name="remaintime">-1.11</string>
     <string name="notif">notif</string>
     <string name="poppy">POP</string>
+    <string name="addmusic">AJOUTER UNE MUSIQUE</string>
+    <string name="addevent">AJOUTER UN EVENEMENT</string>
+
 
 
 </resources>
