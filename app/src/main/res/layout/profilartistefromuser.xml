@@ -97,32 +97,32 @@
             style="@style/MusicStationMetroButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pop"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:text="@string/poppy" />
 
         <Button
             android:id="@+id/rock"
             style="@style/genreMusic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rock"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:text="@string/rock" />
 
         <Button
             android:id="@+id/guitare"
             style="@style/genreMusic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guitare"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:text="@string/guitare" />
 
         <Button
             android:id="@+id/chant"
             style="@style/genreMusic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chant"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            android:text="@string/Chant" />
 
     </LinearLayout>
 
@@ -165,20 +165,20 @@
 
                 <ImageView
                     android:id="@+id/isPlaying"
-                    android:layout_width="16dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/playing"
-                    android:layout_marginLeft="200dp"
+                    android:layout_marginStart="200dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
                     android:alpha="0"
-                    />
+                    android:contentDescription="@string/notif"
+                    app:srcCompat="@drawable/playing" />
 
                 <TextView
                     android:id="@+id/remainingTimeLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-1.11" />
+                    android:text="@string/remaintime" />
             </LinearLayout>
 
             <SeekBar
@@ -186,8 +186,6 @@
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"/>
-
-
         </LinearLayout>
 
         <LinearLayout
@@ -205,14 +203,6 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="24dp">
 
-                <Button
-                    android:id="@+id/playBtn"
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:background="@drawable/play"
-                    android:onClick="playBtnClick"
-                    android:layout_marginStart="24dp"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -222,7 +212,7 @@
                     android:layout_marginStart="32dp"/>
 
                 <ImageView
-                    android:id="@+id/isPlaying"
+                    android:id="@+id/test2"
                     android:layout_width="16dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/playing"
@@ -233,14 +223,14 @@
                     />
 
                 <TextView
-                    android:id="@+id/remainingTimeLabel"
+                    android:id="@+id/test3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-1.11" />
             </LinearLayout>
 
             <SeekBar
-                android:id="@+id/positionBar"
+                android:id="@+id/test4"
                 android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"/>
@@ -248,7 +238,53 @@
 
         </LinearLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/buttonEvent"
+                    style="@style/buttonUnselected"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eventFr" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/bell" />
+
+                <Button
+                    android:id="@+id/buttonMusic"
+                    style="@style/buttonSelected"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/musiqueMenu" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/play"
+            android:onClick="playBtnClick" />
+
+
     </LinearLayout>
+
+
 
 
 </LinearLayout>

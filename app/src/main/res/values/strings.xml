@@ -23,6 +23,13 @@
     <string name="abonnes">128 \n abonnés</string>
     <string name="musiques">3 \n Musiques</string>
     <string name="Perfect">Perfect</string>
+    <string name="Pop" />
+    <string name="guitare">Guitare</string>
+    <string name="Chant">Chant</string>
+    <string name="musiqueMenu">Musiques</string>
+    <string name="remaintime">-1.11</string>
+    <string name="notif">notif</string>
+    <string name="poppy">POP</string>
 
 
 </resources>

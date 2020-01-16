@@ -62,5 +62,23 @@
         <item name="android:textSize">12dp</item>
     </style>
 
+    <style name="buttonUnselected">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/aller_bd</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="buttonSelected">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/backgroundColorTop2</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/aller_bd</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
 
 </resources>
