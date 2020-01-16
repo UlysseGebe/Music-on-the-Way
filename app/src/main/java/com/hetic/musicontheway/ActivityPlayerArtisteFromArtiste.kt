@@ -121,11 +121,15 @@ class ActivityPlayerArtisteFromArtiste : AppCompatActivity() {
 
         }
     }
-    val addButton =  findViewById<ImageView>(R.id.add)
     val addArtistE = findViewById<LinearLayout>(R.id.addArtistEvent)
 
-    fun addAppears(v: View){
+    fun addAppears(){
             addArtistE.setAlpha(1f)
     }
 
+    val creationEvent = findViewById<LinearLayout>(R.id.createEvenement)
+
+    fun addEventForArtist(){
+        creationEvent.setAlpha(1f)
+    }
 }

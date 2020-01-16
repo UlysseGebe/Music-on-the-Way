@@ -25,6 +25,7 @@
             android:value="@string/google_maps_key" />
         <activity android:name=".Maps.MapsActivity"></activity>
         <activity android:name=".ActivityPlayerArtistefromUser"></activity>
+        <activity android:name=".ActivityPlayerArtisteFromArtiste"></activity>
     </application>
 
 </manifest>

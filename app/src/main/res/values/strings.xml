@@ -32,7 +32,12 @@
     <string name="poppy">POP</string>
     <string name="addmusic">AJOUTER UNE MUSIQUE</string>
     <string name="addevent">AJOUTER UN EVENEMENT</string>
-
+    <string name="createEvent">CRÉATION D\ ’UN ÉVÈNEMENT</string>
+    <string name="date">Date</string>
+    <string name="horaires">Horaires</string>
+    <string name="lieu">Lieu</string>
+    <string name="compl_ment_de_lieu">Complément de lieu...</string>
+    <string name="todo">TODO</string>
 
 
 </resources>
