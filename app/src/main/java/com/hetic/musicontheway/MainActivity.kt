@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private var status : Int = 0
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,7 +38,9 @@ class MainActivity : AppCompatActivity() {
 
         choseButton.setOnClickListener {
             if (status == 1) {
-                val intent = Intent(this, NewEvent::class.java)
+                /*val intent = Intent(this, NewEvent::class.java)
+                startActivity(intent)*/
+                val intent = Intent(this, ActivityPlayerArtistefromUser::class.java)
                 startActivity(intent)
 
             } else if (status == 2) {

@@ -48,7 +48,7 @@
                     android:fontFamily="@font/aller_bd"
                     android:text="@string/abonnes"
                     android:textColor="@color/white"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                     android:fontFamily="@font/aller_bd"
                     android:text="@string/musiques"
                     android:textColor="@color/white"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -84,6 +84,171 @@
         </LinearLayout>
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundColorTop2"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/pop"
+            style="@style/MusicStationMetroButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pop"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/rock"
+            style="@style/genreMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rock"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/guitare"
+            style="@style/genreMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guitare"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/chant"
+            style="@style/genreMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chant"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadowrectangle"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/playBtn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/play"
+                    android:onClick="playBtnClick"
+                    android:layout_marginStart="24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller_bd"
+                    android:text="@string/Perfect"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="32dp"/>
+
+                <ImageView
+                    android:id="@+id/isPlaying"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/playing"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:alpha="0"
+                    />
+
+                <TextView
+                    android:id="@+id/remainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1.11" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/positionBar"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadowrectangle"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp">
+
+                <Button
+                    android:id="@+id/playBtn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/play"
+                    android:onClick="playBtnClick"
+                    android:layout_marginStart="24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller_bd"
+                    android:text="@string/funk"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="32dp"/>
+
+                <ImageView
+                    android:id="@+id/isPlaying"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/playing"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:alpha="0"
+                    />
+
+                <TextView
+                    android:id="@+id/remainingTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1.11" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/positionBar"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>
