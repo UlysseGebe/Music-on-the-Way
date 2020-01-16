@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showEvents"
+            style="@style/buttonMenuSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eventFr" />
+
+        <Button
+            android:id="@+id/showMaps"
+            style="@style/buttonMenuUnselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Map" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/filterButton"
+            style="@style/filterButton"
+            android:layout_width="wrap_content"
+            android:text="@string/filtres"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="24dp"/>
+
+        <Button
+        android:id="@+id/funkFilter"
+        style="@style/filterUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/funk"
+        android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/pianoFilter"
+            style="@style/filterUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Piano"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/rockFilter"
+            style="@style/filterUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rock"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

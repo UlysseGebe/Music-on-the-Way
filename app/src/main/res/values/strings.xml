@@ -12,6 +12,16 @@
     <string name="artiste">Artiste</string>
     <string name="voyageur">Voyageur</string>
     <string name="Suivant">Suivant</string>
+    <string name="eventFr">Evenements</string>
+    <string name="Map">Carte</string>
+    <string name="filtres">Filtres</string>
+    <string name="funk">Funk</string>
+    <string name="Piano">Piano</string>
+    <string name="rock">Rock</string>
+    <string name="Nouveau">NOUVEAU</string>
+    <string name="LouisDubois">Louis Dubois</string>
+    <string name="abonnes">128 \n abonnés</string>
+    <string name="musiques">3 \n Musiques</string>
 
 
 </resources>
