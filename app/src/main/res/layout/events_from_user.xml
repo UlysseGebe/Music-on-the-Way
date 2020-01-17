@@ -41,8 +41,8 @@
             style="@style/filterButton"
             android:layout_width="wrap_content"
             android:text="@string/filtres"
-            android:layout_marginRight="8dp"
-            android:layout_marginLeft="24dp"/>
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="24dp"/>
 
         <Button
         android:id="@+id/funkFilter"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/funk"
-        android:layout_marginRight="8dp"/>
+        android:layout_marginEnd="8dp"/>
 
         <Button
             android:id="@+id/pianoFilter"
@@ -58,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Piano"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginEnd="8dp"/>
 
         <Button
             android:id="@+id/rockFilter"
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/rock"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginEnd="8dp"/>
 
     </LinearLayout>
 

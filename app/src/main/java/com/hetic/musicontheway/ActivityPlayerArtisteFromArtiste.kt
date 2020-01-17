@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.SeekBar
+import androidx.core.view.isVisible
 import com.hetic.musicontheway.FireBase.Add.NewEvent
 import com.hetic.musicontheway.Maps.MapsActivity
 import com.hetic.musicontheway.recyclerView.EventActivity
@@ -34,6 +35,14 @@ class ActivityPlayerArtisteFromArtiste : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profil_artist_from_artist)
+        //val buttonAddEventOrMusic = findViewById<ImageView>(R.id.addme)
+        //val createEv = findViewById<LinearLayout>(R.id.createEvenement)
+
+        //buttonAddEventOrMusic.setOnClickListener{
+
+            //createEv.setVisibility()
+
+        //}
 
         mp = MediaPlayer.create(this, R.raw.perfect)
         mp.isLooping=true
@@ -121,15 +130,19 @@ class ActivityPlayerArtisteFromArtiste : AppCompatActivity() {
 
         }
     }
-    val addArtistE = findViewById<LinearLayout>(R.id.addArtistEvent)
 
-    fun addAppears(){
-            addArtistE.setAlpha(1f)
+    fun addAppears(v: View) {
+        addArtistEvent.visibility = View.VISIBLE
     }
 
-    val creationEvent = findViewById<LinearLayout>(R.id.createEvenement)
-
-    fun addEventForArtist(){
-        creationEvent.setAlpha(1f)
+    fun addEventForArtist(v: View) {
+        createEvenement.visibility = View.VISIBLE
     }
+
+
+
+
+
+
+
 }

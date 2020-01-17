@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             if (status == 1) {
                 /*val intent = Intent(this, NewEvent::class.java)
                 startActivity(intent)*/
-                val intent = Intent(this, ActivityPlayerArtistefromUser::class.java)
+                val intent = Intent(this, ActivityPlayerArtisteFromArtiste::class.java)
                 startActivity(intent)
 
             } else if (status == 2) {
