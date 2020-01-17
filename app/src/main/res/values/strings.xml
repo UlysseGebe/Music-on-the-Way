@@ -38,6 +38,7 @@
     <string name="lieu">Lieu</string>
     <string name="compl_ment_de_lieu">Complément de lieu...</string>
     <string name="todo">TODO</string>
+    <string name="Valider">Valider</string>
 
 
 </resources>
