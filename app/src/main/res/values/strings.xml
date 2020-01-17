@@ -20,8 +20,8 @@
     <string name="rock">Rock</string>
     <string name="Nouveau">NOUVEAU</string>
     <string name="LouisDubois">Louis Dubois</string>
-    <string name="abonnes">128 \n abonnés</string>
-    <string name="musiques">3 \n Musiques</string>
+    <string name="abonnes">128 \nabonnés</string>
+    <string name="musiques">3 \nMusiques</string>
     <string name="Perfect">Perfect</string>
     <string name="Pop" />
     <string name="guitare">Guitare</string>
@@ -40,6 +40,8 @@
     <string name="todo">TODO</string>
     <string name="Valider">Valider</string>
     <string name="titleArticle1">Un évènement très intéressant qui se passe près de chez vous</string>
+    <string name="present">Présents</string>
+    <string name="past">Passés</string>
 
 
 </resources>
