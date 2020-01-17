@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.hetic.musicontheway.ActivityPlayerArtistefromUser
 import com.hetic.musicontheway.R
 import com.hetic.musicontheway.recyclerView.model.Event
 import kotlinx.android.synthetic.main.activity_event_detail.*
@@ -24,11 +25,7 @@ class EventDetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_event_detail)
-
-        val event = intent.getParcelableExtra<Event>(EVENT_DETAIL_EXTRA)
-
-        this.title = event.eventID
-        eventDetailNumberTextView.text = event.name.toString()
+        val intent = Intent(this, ActivityPlayerArtistefromUser::class.java)
+        startActivity(intent)
     }
 }

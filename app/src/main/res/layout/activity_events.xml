@@ -1,11 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showEvents"
+            style="@style/buttonMenuSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/eventFr" />
+
+        <Button
+            android:id="@+id/showMaps"
+            style="@style/buttonMenuUnselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Map" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarThumbHorizontal="@color/none"
+        android:scrollbarThumbVertical="@color/none"
+        android:scrollbarTrackHorizontal="@color/none"
+        android:scrollbarTrackVertical="@color/none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/filterButton"
+                style="@style/filterButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:textOff="@string/filtres"
+                android:textOn="@string/filtres" />
+
+            <ToggleButton
+                android:id="@+id/rockFilter"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textOff="@string/rock"
+                android:textOn="@string/rock" />
+
+            <ToggleButton
+                android:id="@+id/funkFilter"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:autoText="false"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textOff="@string/funk"
+                android:textOn="@string/funk" />
+
+            <ToggleButton
+                android:id="@+id/pianoFilter"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textOff="@string/Piano"
+                android:textOn="@string/Piano" />
+
+            <ToggleButton
+                android:id="@+id/rockFilter2"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textOff="@string/rock"
+                android:textOn="@string/rock" />
+
+            <ToggleButton
+                android:id="@+id/funkFilter2"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textOff="@string/funk"
+                android:textOn="@string/funk" />
+
+            <ToggleButton
+                android:id="@+id/pianoFilter3"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textOff="@string/Piano"
+                android:textOn="@string/Piano" />
+
+            <ToggleButton
+                android:id="@+id/rockFilter3"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textOff="@string/rock"
+                android:textOn="@string/rock" />
+
+            <ToggleButton
+                android:id="@+id/funkFilter3"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:textOff="@string/funk"
+                android:textOn="@string/funk" />
+
+            <ToggleButton
+                android:id="@+id/pianoFilter4"
+                style="@style/filterUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:textOff="@string/Piano"
+                android:textOn="@string/Piano" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/eventsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 </LinearLayout>

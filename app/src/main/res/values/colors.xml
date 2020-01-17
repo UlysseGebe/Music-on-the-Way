@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3D71F6</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryDark">#000A27</color>
+    <color name="colorAccent">#56CBA1</color>
 
     <color name="widgetColor">#56CBA1</color>
     <color name="backgroundColorTop">#3D71F6</color>
     <color name="backgroundColorTop2">#7CA1FF</color>
     <color name="black">#333333</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="none">@color/none</color>
 </resources>

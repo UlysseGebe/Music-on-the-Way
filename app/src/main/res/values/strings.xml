@@ -22,6 +22,24 @@
     <string name="LouisDubois">Louis Dubois</string>
     <string name="abonnes">128 \n abonnés</string>
     <string name="musiques">3 \n Musiques</string>
+    <string name="Perfect">Perfect</string>
+    <string name="Pop" />
+    <string name="guitare">Guitare</string>
+    <string name="Chant">Chant</string>
+    <string name="musiqueMenu">Musiques</string>
+    <string name="remaintime">-1.11</string>
+    <string name="notif">notif</string>
+    <string name="poppy">POP</string>
+    <string name="addmusic">AJOUTER UNE MUSIQUE</string>
+    <string name="addevent">AJOUTER UN EVENEMENT</string>
+    <string name="createEvent">CRÉATION D\ ’UN ÉVÈNEMENT</string>
+    <string name="date">Date</string>
+    <string name="horaires">Horaires</string>
+    <string name="lieu">Lieu</string>
+    <string name="compl_ment_de_lieu">Complément de lieu...</string>
+    <string name="todo">TODO</string>
+    <string name="Valider">Valider</string>
+    <string name="titleArticle1">Un évènement très intéressant qui se passe près de chez vous</string>
 
 
 </resources>

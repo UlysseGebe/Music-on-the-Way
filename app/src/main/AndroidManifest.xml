@@ -19,13 +19,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FireBase.Add.NewEvent"></activity>
+        <activity
+            android:name=".FireBase.Add.NewEvent"
+            android:parentActivityName=".ActivityPlayerArtisteFromArtiste"></activity>
         <activity android:name=".recyclerView.EventActivity"></activity>
         <activity android:name=".recyclerView.EventDetailActivity"></activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity android:name=".Maps.MapsActivity"></activity>
+        <activity android:name=".ActivityPlayerArtisteFromArtiste"></activity>
+        <activity android:name=".ActivityPlayerArtistefromUser"></activity>
     </application>
 
 </manifest>

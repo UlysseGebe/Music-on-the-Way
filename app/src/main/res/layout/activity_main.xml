@@ -86,7 +86,7 @@
             >
 
             <Button
-                android:id="@+id/choseButton"
+                android:id="@+id/ButtonNewEvent"
                 style="@style/MusicStationMetroButton"
                 android:text="@string/Suivant"
                 app:layout_constraintBottom_toBottomOf="parent"

@@ -1,5 +1,6 @@
 package com.hetic.musicontheway.recyclerView
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -11,6 +12,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.hetic.musicontheway.Maps.MapsActivity
 import com.hetic.musicontheway.R
 import com.hetic.musicontheway.recyclerView.item.EventItem
 import com.hetic.musicontheway.recyclerView.model.Event
@@ -27,6 +29,10 @@ class EventActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_events)
 
+        showMaps.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
 
         reference.addValueEventListener(object : ValueEventListener {
             val listEvent = mutableListOf<Event>()
@@ -42,9 +48,9 @@ class EventActivity : AppCompatActivity() {
                 }
                 for (element in listEvent) {
                     val eventID = element.eventID
-                    val name = element.name
-                    val text = element.text
-                    listEvents.add(Event(eventID, name, text))
+                    val title = element.title
+                    val station = element.station
+                    listEvents.add(Event(eventID, title, station))
                 }
 
                 // Création de l'item adapter pour gérer les AbstractItem (FastAdapter)
@@ -57,8 +63,6 @@ class EventActivity : AppCompatActivity() {
                 eventsRecyclerView.layoutManager = LinearLayoutManager(this@EventActivity)
                 // liaison du fast adapter à la recycler view pour afficher les cellules
                 eventsRecyclerView.adapter = eventsFastAdapter
-                // Ajout d'un séparateur entre les cellules
-                eventsRecyclerView.addItemDecoration(DividerItemDecoration(this@EventActivity, RecyclerView.VERTICAL))
 
                 // Gestion du clic sur le fast Adapter
                 eventsFastAdapter.onClickListener = { view: View?, iAdapter: IAdapter<EventItem>, eventItem: EventItem, i: Int ->

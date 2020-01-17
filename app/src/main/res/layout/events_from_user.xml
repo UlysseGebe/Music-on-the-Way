@@ -36,39 +36,50 @@
         android:orientation="horizontal"
         android:layout_marginTop="18dp">
 
-        <Button
+        <ToggleButton
             android:id="@+id/filterButton"
             style="@style/filterButton"
             android:layout_width="wrap_content"
-            android:text="@string/filtres"
+            android:textOn="@string/filtres"
+            android:textOff="@string/filtres"
             android:layout_marginRight="8dp"
             android:layout_marginLeft="24dp"/>
 
-        <Button
-        android:id="@+id/funkFilter"
-        style="@style/filterUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/funk"
-        android:layout_marginRight="8dp"/>
+        <ToggleButton
+            android:id="@+id/funkFilter"
+            style="@style/filterUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:autoText="false"
+            android:clickable="false"
+            android:textColor="@color/white"
+            android:textOff="@string/funk"
+            android:textOn="@string/funk" />
 
-        <Button
+        <ToggleButton
             android:id="@+id/pianoFilter"
             style="@style/filterUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Piano"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp"
+            android:textOff="@string/Piano"
+            android:textOn="@string/Piano" />
 
-        <Button
+        <ToggleButton
             android:id="@+id/rockFilter"
             style="@style/filterUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rock"
+            android:textOn="@string/rock"
+            android:textOff="@string/rock"
             android:layout_marginRight="8dp"/>
 
     </LinearLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/eventsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
